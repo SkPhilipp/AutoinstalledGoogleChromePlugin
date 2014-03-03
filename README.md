@@ -1,4 +1,4 @@
-These scripts install `google-chrome` with the deprecated and no longer available persistent background script available. This took a lot of work to get right, and i am no longer using it in my private project so here you go. This is tested on ubuntu server with a tightvnc server running using `localhost:1`. This fully installs google-chrome along with a custom plugin.
+These scripts install `google-chrome` with the deprecated and with the ( no longer available through normal way of installing ) persistent background script available. This took a lot of work to get right, and i am no longer using it in my private project so here you go. This is tested on ubuntu server with a tightvnc server running using `localhost:1`. This fully installs google-chrome along with a custom plugin.
 
 These scripts were ran using vagrant, cut-pasted:
 
