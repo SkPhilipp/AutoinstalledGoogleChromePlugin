@@ -1,4 +1,4 @@
-# Auto installed `google-chrome` with your own plugin
+# `google-chrome` + custom plugin
 
 This took a lot of work to get right, and i am no longer using it in my private project so here you go. This is tested on ubuntu server with a tightvnc server running using `localhost:1`. This fully installs google-chrome along with a custom plugin.
 
