@@ -1,4 +1,4 @@
-# `google-chrome` + custom plugin
+# google-chrome + custom plugin
 
 This took a lot of work to get right, and i am no longer using it in my private project so here you go. This is tested on ubuntu server with a tightvnc server running using `localhost:1`. This fully installs google-chrome along with a custom plugin.
 
@@ -9,7 +9,7 @@ These scripts were ran using vagrant, cut-pasted:
 
 `/opt/shared/bot-chrome-plugin/` would be your plugin source folder.
 
-## `ubuntu-chrome-google.sh`
+## ubuntu-chrome-google.sh
 
 Automatically installs `google-chrome` from Google's repositories, and makes sure it does not pop up with its "first run" dialog the first time you run it.
 
@@ -30,7 +30,7 @@ Automatically installs `google-chrome` from Google's repositories, and makes sur
     mkdir -p 'chrome/First Run'
     google-chrome --user-data-dir=chrome --ingocnito &
 
-## `ubuntu-project-bot-chrome-plugin.sh`
+## ubuntu-project-bot-chrome-plugin.sh
 
 Waits for chrome to create its folder structure, then kills it, packs the extension and inserts a special plugin manifest file into the user's `Preferences` file.
 
@@ -96,4 +96,4 @@ Waits for chrome to create its folder structure, then kills it, packs the extens
     
     nohup google-chrome --user-data-dir=chrome --ingocnito &
 
-Most important from this is that to have a persiting background script, you'll need to add it as a permission and mark it as installed from the webstore. The key that you use does not matter as you can read in the trivia bit.
+Most important from this is that to have a persiting background script, you'll need to add it as a permission and mark it as installed from the webstore. The key that you use does not matter, as long as you are not going to legitimately update it from Google's web store.
